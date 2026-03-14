@@ -834,6 +834,14 @@ msgstr "Google Cloud Storage"
 msgid "You must supply a project ID with --{0} for creating a bucket."
 msgstr "Vous devez fournir un ID de projet avec --{0} pour créer un seau."
 
+#: Library/Backend/GoogleServices/Strings.cs:31
+msgid ""
+"The supplied credentials are missing the full control scope. Please use a "
+"service account with full control access."
+msgstr ""
+"Les identifiants indiqués ne remplissent pas le critère d'étendue intégrale."
+" Merci d'utiliser un compte de service disposant des droit complets."
+
 #: Library/Backend/GoogleServices/Strings.cs:32
 #, csharp-format
 msgid ""
@@ -896,6 +904,19 @@ msgstr ""
 "Chemin vers un fichier d'identifiants JSON pour un compte de service Google "
 "Cloud. Une fois défini, l'AuthID n'est plus requise."
 
+#: Library/Backend/GoogleServices/Strings.cs:44
+msgid "Specify retention policy mode"
+msgstr "Indiquez un mode de stratégie de préservation"
+
+#: Library/Backend/GoogleServices/Strings.cs:45
+msgid ""
+"This option specifies the retention policy mode to use when setting object "
+"lock. Possible values are 'Locked' and 'Unlocked'."
+msgstr ""
+"Cette option permet d'indiquer un mode de stratégie de préservation à "
+"utiliser conjointement au verrouillage d'objets. Les valeurs possibles sont "
+"'Locked' et 'Unlocked'."
+
 #: Library/Backend/GoogleServices/Strings.cs:50
 msgid ""
 "This backend can read and write data to Google Drive. Allowed format is "
@@ -951,6 +972,80 @@ msgstr "Module de configuration Google Cloud Storage"
 msgid "Expose Google Cloud Storage configuration as a web module"
 msgstr "Présente la configuration Google Cloud Storage en tant que module web"
 
+#: Library/Backend/Duplicati/Strings.cs:28
+msgid "This backend can read and write data to Duplicati Storage."
+msgstr ""
+"Cette plateforme peut lire et écrire des données dans le stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:29
+msgid "Duplicati Storage Backend"
+msgstr "Plateforme de stockage Duplicati"
+
+#: Library/Backend/Duplicati/Strings.cs:31
+msgid "The API ID for authenticating with the Duplicati storage server."
+msgstr ""
+"ID d'API pour l'authentification avec le serveur de stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:32
+msgid ""
+"Specifies the API ID to use when authenticating with the Duplicati storage "
+"server."
+msgstr "Indique l'ID d'API à utiliser avec le serveur de stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:33
+msgid "The API Key for authenticating with the Duplicati storage server."
+msgstr ""
+" Clé d'API pour l'authentification avec le serveur de stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:34
+msgid ""
+"Specifies the API Key to use when authenticating with the Duplicati storage "
+"server."
+msgstr ""
+" Indique la clé d'API à utiliser pour l'authentification avec le serveur de "
+"stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:35
+msgid "The Backup ID to use on the Duplicati storage server."
+msgstr "ID de sauvegarde à utiliser sur le serveur de stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:36
+msgid ""
+"Each backupID identifies a separate backup set on the Duplicati storage "
+"server."
+msgstr ""
+"Chaque ID de sauvegarde identifie un jeu de sauvegarde unique sur le serveur"
+" de stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:37
+msgid "A unique backup id must be specified"
+msgstr "Indiquez un seul et unique ID de sauvegarde "
+
+#: Library/Backend/Duplicati/Strings.cs:42
+msgid "Lists the backup folders on a Duplicati storage server."
+msgstr ""
+"Liste les dossiers de sauvegarde sur un serveur de stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:43
+msgid "List Duplicati Backup Folders"
+msgstr "Liste les dossiers de sauvegarde Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:45
+msgid "The action to perform."
+msgstr "Action à effectuer"
+
+#: Library/Backend/Duplicati/Strings.cs:46
+msgid "Specifies the action to perform."
+msgstr "Indique l'action à effectuer."
+
+#: Library/Backend/Duplicati/Strings.cs:48
+msgid "The URL of the Duplicati storage server."
+msgstr "URL du serveur de stockage Duplicati."
+
+#: Library/Backend/Duplicati/Strings.cs:49
+msgid "Specifies the URL of the Duplicati storage server."
+msgstr "Indique l'URL du serveur de stockage Duplicati."
+
 #: Library/Backend/S3/Strings.cs:26
 msgid ""
 "This backend can read and write data to an S3 compatible server. Allowed "
@@ -962,6 +1057,28 @@ msgstr ""
 #: Library/Backend/S3/Strings.cs:27
 msgid "S3 compatible"
 msgstr "Compatible S3"
+
+#: Library/Backend/S3/Strings.cs:28
+#, csharp-format
+msgid ""
+"Secret Access Key can be obtained after logging into your account. This can "
+"also be supplied through the option --{0}."
+msgstr ""
+"La clé d'accès secrète peut être obtenue après connexion à votre compte. "
+"Elle peut aussi être fournie via l'option --{0}."
+
+#: Library/Backend/S3/Strings.cs:29
+msgid "Secret Access Key"
+msgstr "Clé d'accès secrète"
+
+#: Library/Backend/S3/Strings.cs:30
+#, csharp-format
+msgid ""
+"Access Key ID can be obtained after logging into your account. This can also"
+" be supplied through the option --{0}."
+msgstr ""
+"L'ID de clé d'accès peut être obtenue après connexion à votre compte. Elle "
+"peut aussi être fournie via l'option --{0}."
 
 #: Library/Backend/S3/Strings.cs:31 Library/Backend/AliyunOSS/Strings.cs:30
 #: Library/Backend/Idrivee2/Strings.cs:31
@@ -1115,6 +1232,35 @@ msgid ""
 msgstr ""
 "Outrepasser le comportement par défaut qui n'affiche que le premier niveau "
 "d'objets. Lister tous les objets du seau."
+
+#: Library/Backend/S3/Strings.cs:60 Library/Backend/Idrivee2/Strings.cs:34
+msgid "Specify the S3 object lock mode"
+msgstr "Indiquer le mode de verrouillage d'objet S3"
+
+#: Library/Backend/S3/Strings.cs:61 Library/Backend/Idrivee2/Strings.cs:35
+msgid ""
+"Use this option to specify the S3 object lock mode. Governance mode allows "
+"users with special permissions to bypass the lock, while Compliance mode "
+"enforces strict immutability."
+msgstr ""
+"Option destinée à indiquer le mode de verrouillage d'objets S3. Le mode "
+"\"Gouvernance\" permet aux utilisateurs dotés de permissions spéciales de "
+"contourner le verrouillage, alors que le mode \"Compliance\" force "
+"l'immuabilité des verrouillages."
+
+#: Library/Backend/S3/Strings.cs:62
+msgid "Specify the authentication region"
+msgstr "Indiquez la région d'authentification"
+
+#: Library/Backend/S3/Strings.cs:63
+msgid ""
+"Use this option to specify the region used when signing requests. "
+"Authentication will use this value or fall back to the location constraint "
+"region if not supplied."
+msgstr ""
+"Option destinée à indiquer la région utilisée pour signer les requêtes. "
+"L'authentification utilisera cette valeur ou se rabattra sur la région "
+"contrainte si rien n'est indiqué."
 
 #: Library/Backend/S3/Strings.cs:64
 #, csharp-format
@@ -1706,6 +1852,22 @@ msgstr ""
 msgid "The base URL to use for downloading files"
 msgstr "Lien de base à utiliser pour le téléchargement de fichiers"
 
+#: Library/Backend/Backblaze/Strings.cs:41
+msgid ""
+"Sets the lock mode for B2 object retention. Governance mode allows "
+"privileged users to bypass retention, while Compliance mode enforces strict "
+"retention that cannot be bypassed."
+msgstr ""
+"Règle le mode de verrouillage pour la préservation d'objets sur B2. Le mode "
+"Governance permet aux utilisateurs autorisés à outrepasser la préservation, "
+"alors que le mode Compliance force une préservation stricte qui ne peut être"
+" contournée."
+
+#: Library/Backend/Backblaze/Strings.cs:42
+msgid "The lock mode for B2 object retention (Governance or Compliance)"
+msgstr ""
+"Mode de verrouillage de préservation d'objets B2 (Governance or Compliance)"
+
 #: Library/Backend/Backblaze/Strings.cs:43
 #, csharp-format
 msgid ""
@@ -1714,6 +1876,15 @@ msgid ""
 msgstr ""
 "Réglage \"{0}\" invalide pour \"{1}\". Nombre entier strictement positif "
 "attendu."
+
+#: Library/Backend/Backblaze/Strings.cs:44
+#, csharp-format
+msgid ""
+"The setting \"{0}\" is invalid for \"{1}\". It must be either \"Governance\""
+" or \"Compliance\"."
+msgstr ""
+"Le réglage \"{0}\" est invalide pour \"{1}\". Il doit être soit "
+"\"Governance\" soit \"Compliance\"."
 
 #: Library/Backend/OneDrive/Strings.cs:26
 msgid ""
@@ -2100,6 +2271,16 @@ msgstr ""
 "Indiquez par cette option le nombre de tentatives d'opérations sur des blobs"
 " Azure. 0 pour désactiver."
 
+#: Library/Backend/AzureBlob/Strings.cs:46
+msgid "The immutability policy mode"
+msgstr "Mode de stratégie d'immuabilité"
+
+#: Library/Backend/AzureBlob/Strings.cs:47
+msgid ""
+"Use this option to specify the immutability policy mode. The default is "
+"'Unlocked'."
+msgstr "Indiquez le mode de stratégie d'immuabilité. 'Unlocked' par défaut."
+
 #: Library/Backend/Filen/Strings.cs:26
 msgid ""
 "This backend can read and write data to Filen.io using its REST protocol. "
@@ -2130,6 +2311,15 @@ msgstr ""
 #: Library/Backend/Filen/Strings.cs:30
 msgid "Optional API key"
 msgstr "Clé d'API optionnelle"
+
+#: Library/Backend/Filen/Strings.cs:31
+msgid ""
+"The API key to use for authentication, which will work even if the account "
+"is MFA protected. Obtain the API key via the Filen CLI tool."
+msgstr ""
+"Clé d'API pour authentication, qui fonctionnera même si le compte est "
+"protégé par l'authentification multifacteurs MFA. Récupérez votre clé d'API "
+"avec l'outil Command Line Interface CLI Filen."
 
 #: Library/Backend/Filen/Strings.cs:32
 msgid "Move to trash"
@@ -2576,6 +2766,14 @@ msgstr "Échec de fermeture de l'accès au fichier sur PutAsync"
 msgid "Failed to create file for writing"
 msgstr "Échec de création de fichier à écrire"
 
+#: Library/Backend/SMB/SMBShareConnection.cs:550
+msgid "Failed to rename file on RenameAsync"
+msgstr "Échec de renommage de fichier sur RenameAsync"
+
+#: Library/Backend/SMB/SMBShareConnection.cs:553
+msgid "Failed to close file on RenameAsync"
+msgstr "Échec de fermeture de fichier sur RenameAsync"
+
 #: Library/Backend/SMB/Strings.cs:29
 msgid ""
 "The domain used to connect to the server. This may also be supplied as the "
@@ -2977,6 +3175,30 @@ msgstr ""
 msgid "Secrets from a file"
 msgstr "Secrets depuis un fichier"
 
+#: Library/SecretProvider/Strings.cs:41
+msgid ""
+"Secret provider that reads secrets from a file\n"
+"Example use:\n"
+"    file://path/to/file?passphrase=secret\n"
+"\n"
+"The file should be a JSON-encoded object with the secrets as key-value pairs.\n"
+"If the file is not encrypted with a passphrase, the passphrase parameter can be omitted.\n"
+"The file must be encrypted with AESCrypt if encryption is desired.\n"
+"For file-based secrets, the lookup is case-insensitive.\n"
+"\n"
+"If the file is encrypted, this provider can also write secrets back to the file.\n"
+msgstr ""
+"Fournisseur de secret qui lit les secrets depuis un fichier\n"
+"Exemple  :\n"
+"    file://chemin/vers/fichier?phraseDePasse=sezame\n"
+"\n"
+"Le fichier doit être encodé JSON avec les secrets comme paires clé-valeur.\n"
+"Si le fichier n'est pas chiffré avec une phrase de passe, le paramètre passphrase peut être omis.\n"
+"Le fichier doit être chiffré avec AESCrypt si le chiffrement est souhaité.\n"
+"Pour les secrets basés sur un fichier, la recherche est insensible à la casse.\n"
+"\n"
+"Si le fichier est chiffré, ce fournisseur peut aussi écrire des secret en retour vers le fichier.\n"
+
 #: Library/SecretProvider/Strings.cs:53
 msgid "The decryption passphrase"
 msgstr "Phrase de passe de déchiffrement"
@@ -2988,6 +3210,24 @@ msgstr "Phrase de passe de déchiffrement du fichier de secrets"
 #: Library/SecretProvider/Strings.cs:59
 msgid "Secrets from AWS Secrets Manager"
 msgstr "Secrets depuis AWS Secret Manager"
+
+#: Library/SecretProvider/Strings.cs:61
+msgid ""
+"Secret provider that reads and writes secrets from AWS Secrets Manager\n"
+"Example use:\n"
+"    aws://?access-key=...&secret-key=...&region-endpoint=us-east-1&secrets=secret1,secret2\n"
+"\n"
+"Either the region endpoint or the service URL must be provided.\n"
+"Each secret is retrieved in the order specified until all requested keys are found.\n"
+"Each secret must be a key-value pair type secret.\n"
+msgstr ""
+"Fournisseur de secret qui lit et écrit des secrets depuis AWS Secrets Manager\n"
+"Exemple :\n"
+"    aws://?access-key=...&secret-key=...&region-endpoint=us-east-1&secrets=secret1,secret2\n"
+"\n"
+"Requis : région de la plateforme ou URL du service.\n"
+"Chaque secret est récupéré dans l'ordre indiqué jusqu'à ce que toutes les clés demandées soient trouvées.\n"
+"Chaque secret doit être de type paire clé-valeur.\n"
 
 #: Library/SecretProvider/Strings.cs:69
 msgid "The AWS access key"
@@ -3065,6 +3305,22 @@ msgstr "Respecter la casse pour la correspondance des noms des secrets"
 msgid "Secrets from HashiCorp Vault"
 msgstr "Secret de HashiCorp Vault"
 
+#: Library/SecretProvider/Strings.cs:87
+msgid ""
+"Secret provider that reads and writes secrets from HashiCorp Vault\n"
+"Example use:\n"
+"    hcv://localhost:1234?token=...&mount=secret&secrets=secret1,secret2\n"
+"\n"
+"The secrets parameter should be a comma- or semicolon-separated list of secret names to retrieve from the Vault.\n"
+"Each vault secret is retrieved in the order specified until all requested keys are found.\n"
+msgstr ""
+"Fournisseur de secret qui lit et écrit des secrets depuis HashiCorp Vault\n"
+"Exemple :\n"
+"    hcv://localhost:1234?token=...&mount=secret&secrets=secret1,secret2\n"
+"\n"
+"Le paramètre secrets doit être une liste de noms secrets séparés par des virgule ou point-virgules à récupérer depuis le Vault.\n"
+"Chaque secret est récupéré dans l'ordre indiqué jusqu'à ce que toutes les clés demandées soient trouvées..\n"
+
 #: Library/SecretProvider/Strings.cs:94
 msgid "The Vault token"
 msgstr "Jeton de Coffre"
@@ -3131,6 +3387,26 @@ msgstr "Point de montage des secret dans le Coffre"
 msgid "Secrets from Google Cloud Storage Secret Manager"
 msgstr "Secrets de Google Cloud Storage Secret Manager"
 
+#: Library/SecretProvider/Strings.cs:114
+msgid ""
+"Secret provider that reads and writes secrets from Google Cloud Storage Secret Manager\n"
+"Example use:\n"
+"    gcs://?project-id=...&version=latest\n"
+"\n"
+"If the access token is not supplied, the default GCS credentials from the machine will be used.\n"
+"Use the accesstoken property to specify a custom access token.\n"
+"Alternatively, you can supply service-account-json or service-account-file with Google Cloud service account credentials.\n"
+"\n"
+msgstr ""
+"Fournisseur qui lit et écrit depuis Google Cloud Storage Secret Manager\n"
+"Exemple :\n"
+"    gcs://?project-id=...&version=latest\n"
+"\n"
+"Si le jeton d'accès n'est pas fourni, les identifiant GCS par défaut de la machine sont utilisés.\n"
+"Utiliser la propriété accesstoken pour indiquer un jeton d'accès personnalisé.\n"
+"Alternativement, vous pouvez fournir un service-account-json ou un service-account-file avec les identifiants de compte Google Cloud.\n"
+"\n"
+
 #: Library/SecretProvider/Strings.cs:123
 msgid "The API type to use"
 msgstr "Type d'API à utiliser"
@@ -3159,6 +3435,25 @@ msgstr ""
 "Jeton d'accès pour l'authentification Google Cloud Storage. Si non "
 "renseigné, les identifiants GCS par défaut de la machine seront utilisés."
 
+#: Library/SecretProvider/Strings.cs:130
+msgid ""
+"String with JSON credentials for a Google Cloud service account. When set, "
+"access-token is not required."
+msgstr ""
+"Chaîne d'identifiants JSON pour Google Cloud. Dispense de jeton d'accès."
+
+#: Library/SecretProvider/Strings.cs:131
+msgid "Service account JSON file"
+msgstr "Fichier JSON de compte de service"
+
+#: Library/SecretProvider/Strings.cs:132
+msgid ""
+"Path to a file with JSON credentials for a Google Cloud service account. "
+"When set, access-token is not required."
+msgstr ""
+"Chemin du fichier JSON d'identifiants de compte de service Google Cloud. "
+"Vous êtes dispensé de jeton d'accès."
+
 #: Library/SecretProvider/Strings.cs:133
 msgid "The secret version to get (or alias)"
 msgstr "Version du secret à obtenir (alias)"
@@ -3174,6 +3469,32 @@ msgstr ""
 #: Library/SecretProvider/Strings.cs:139
 msgid "Secrets from Azure Key Vault"
 msgstr "Secrets d'Azure Key Vault"
+
+#: Library/SecretProvider/Strings.cs:141
+msgid ""
+"Secret provider that reads and writes secrets from Azure Key Vault\n"
+"Example use:\n"
+"    az://?keyvault-name=...&auth-type=ManagedIdentity\n"
+"\n"
+"If a client ID and secret are provided, use the auth type ClientSecret:\n"
+"    az://?keyvault-name=...&auth-type=ClientSecret&tenant-id=...&client-id=...&client-secret=...\n"
+"\n"
+"If a username and password are provided, use the auth type UsernamePassword:\n"
+"    az://?keyvault-name=...&auth-type=UsernamePassword&tenant-id=...&clientid=...&username=...&password=...\n"
+"\n"
+"If the vault-uri parameter is not provided, the keyvault-name parameter will be used to construct the URI.\n"
+msgstr ""
+"Fournisseur de secret qui lit et écrit depuis Azure Key Vault\n"
+"Exemple :\n"
+"    az://?keyvault-name=...&auth-type=ManagedIdentity\n"
+"\n"
+"Si un ID de client et un secret sont indiqués, utilisez le type d'authentification ClientSecret :\n"
+"    az://?keyvault-name=...&auth-type=ClientSecret&tenant-id=...&client-id=...&client-secret=...\n"
+"\n"
+"Si un nom d'utilisateur et un mot de passe sont indiqués, utilisez le type d'authentification UsernamePassword :\n"
+"    az://?keyvault-name=...&auth-type=UsernamePassword&tenant-id=...&clientid=...&username=...&password=...\n"
+"\n"
+"Si le paramètre vault-uri n'est pas renseigné, le paramètre keyvault-name sera utilisé pour construire l'URI.\n"
 
 #: Library/SecretProvider/Strings.cs:153
 msgid "The name of the Azure Key Vault"
@@ -3252,6 +3573,11 @@ msgstr "Type d'authentification pour Azure Key Vault"
 msgid "Secrets from macOS Keychain"
 msgstr "Secrets pour macOS Keychain"
 
+#: Library/SecretProvider/Strings.cs:176
+msgid "Secret provider that reads and writes secrets from the macOS Keychain"
+msgstr ""
+"Fournisseur de secret qui lit et écrit depuis le trousseau de clés macOS"
+
 #: Library/SecretProvider/Strings.cs:177
 msgid "The service name"
 msgstr "Nom du service"
@@ -3281,6 +3607,14 @@ msgstr "Type de mot de passe à récupérer de macOS Keychain"
 msgid "Secrets from Unix pass"
 msgstr "Secret de Unix pass"
 
+#: Library/SecretProvider/Strings.cs:188
+msgid ""
+"Secret provider that reads and writes secrets from the Unix pass password "
+"manager"
+msgstr ""
+"Fournisseur qui lit et écrit les secrets du gestionnaire de mots de passe "
+"Unix"
+
 #: Library/SecretProvider/Strings.cs:189
 msgid "The pass command"
 msgstr "Commande pass"
@@ -3297,13 +3631,53 @@ msgstr ""
 msgid "Secrets from Windows Credential Manager"
 msgstr "Secrets du Gestionnaire d'Identifications Windows"
 
+#: Library/SecretProvider/Strings.cs:196
+msgid ""
+"Secret provider that reads and writes secrets from the Windows Credential "
+"Manager"
+msgstr ""
+"Fournisseur qui lit et écrit les secrets du Gestionnaire d'Identifiants "
+"Windows"
+
 #: Library/SecretProvider/Strings.cs:201
 msgid "Secrets from libsecret"
 msgstr "Secret de libsecret"
 
+#: Library/SecretProvider/Strings.cs:202
+msgid ""
+"Secret provider that reads and writes secrets from the libsecret password "
+"manager"
+msgstr ""
+"Fournisseur qui lit et écrit les secrets du gestionnaire de mots de passe "
+"libsecret "
+
 #: Library/SecretProvider/Strings.cs:203
 msgid "The collection name"
 msgstr "Nom de la collection"
+
+#: Library/SecretProvider/Strings.cs:204
+msgid ""
+"The collection name to use for retrieving secrets from the libsecret "
+"password manager. The value \"default\" can be used to access the default "
+"collection, and will resolve to \"login\" if the system does not have a "
+"default collection."
+msgstr ""
+"Nom de la collection à utiliser pour retrouver les secrets du gestionnaire "
+"de mots de passe libsecret. La valeur \"default\" peut être utilisée pour "
+"accéder à la collection par défaut, et elle se traduira en \"login\" si le "
+"système ne dispose pas d'une collection par défaut."
+
+#: Library/SecretProvider/Strings.cs:207
+msgid "Disable auto-create collection"
+msgstr "Désactiver la création automatique de collection"
+
+#: Library/SecretProvider/Strings.cs:208
+msgid ""
+"Disables the automatic creation of the collection if it does not exist when "
+"accessing libsecret"
+msgstr ""
+"Désactive la création automatique de la collection si elle n'existe pas lors"
+" de l'accès à libsecret"
 
 #: Library/RestAPI/Strings.cs:29
 msgid "Another instance is running, and was notified"
@@ -3673,6 +4047,15 @@ msgid "Use this option to disable database encryption of sensitive fields"
 msgstr ""
 "Désactiver le chiffrement des champs confidentiels de la base de données"
 
+#: Library/RestAPI/Strings.cs:85
+msgid ""
+"Use this option to log to the Windows event log. The provided name is in the"
+" format Log:Source. If no log name is provided, \"Duplicati 2\" is used."
+msgstr ""
+"Option de journalisation vers les journal Windows. Le nom du fournisseur est"
+" au format Log:Source. Si aucun nom n'est indiqué, \"Duplicati 2\" sera "
+"utilisé."
+
 #: Library/RestAPI/Strings.cs:86
 msgid "Log to the Windows event log"
 msgstr "Journaliser vers le Journal d'évènements de Windows"
@@ -3904,6 +4287,17 @@ msgstr ""
 "virgules. Si cette option n'est pas déclarée touts les modules de "
 "chiffrement sont autorisés. Utilisez-la pour restreindre les modules de "
 "compression des données sauvegardées utilisables."
+
+#: Library/RestAPI/Strings.cs:120
+msgid "Failed to get encryption key from secret provider"
+msgstr ""
+"Échec de récupération de la clé de chiffrement depuis le fournisseur de "
+"secret"
+
+#: Library/RestAPI/Strings.cs:121
+msgid "Failed to set encryption key in secret provider"
+msgstr ""
+"Échec de définition de la clé de chiffrement dans le fournisseur de secret"
 
 #: Library/RestAPI/Strings.cs:125
 #, csharp-format
@@ -4525,6 +4919,40 @@ msgstr ""
 msgid "Show largest prefix"
 msgstr "Afficher le plus grand préfixe"
 
+#: Library/Main/Strings.cs:84
+msgid ""
+"Use this option to rename files instead of deleting them. The value is the "
+"prefix to add to the filename. If the backend supports renaming, the file is"
+" renamed. Otherwise, the file is downloaded, re-uploaded with the new name, "
+"and then deleted. If the prefix contains a folder separator, the target "
+"folder must exist."
+msgstr ""
+"Cette option permet de renommer les fichiers au lieu de les supprimer. La "
+"valeur est le préfixe ajouté au nom du fichier. Si la plateforme le permet "
+"le renommage, le fichier est renommé. Sinon, le fichier est téléchargé, re-"
+"envoyé avec son nouveau nom, puis sa version d'origine supprimée. Si le "
+"préfixe contient un séparateur de répertoire, le répertoire cible doit "
+"exister."
+
+#: Library/Main/Strings.cs:85
+msgid "Prefix for soft-deleted files"
+msgstr "Préfixe pour les suppressions logicielles de fichiers"
+
+#: Library/Main/Strings.cs:86
+msgid ""
+"Use this option to prevent the backend from renaming files, even if the "
+"backend supports it. This will force the soft-delete operation to download, "
+"re-upload with the new name, and then delete the original file."
+msgstr ""
+"Cette option permet d'empêcher le renommage des fichiers par "
+"l'infrastructure même si elle en a la possibilité. Cela force l'opération de"
+" suppression logicielle à télécharger, re-envoyer avec un nouveau nom, puis "
+"supprimer le fichier original."
+
+#: Library/Main/Strings.cs:87
+msgid "Prevent backend rename"
+msgstr "Empêcher le renommage par l'infrastructure"
+
 #: Library/Main/Strings.cs:88
 msgid ""
 "When searching for files, all matching files are returned. Use this option "
@@ -4740,6 +5168,34 @@ msgstr ""
 #: Library/Main/Strings.cs:120
 msgid "Enable one or more modules"
 msgstr "Activer un ou plusieurs modules"
+
+#: Library/Main/Strings.cs:121
+msgid ""
+"This setting controls the usage of snapshots, which allows Duplicati to "
+"backup files that are locked by other programs. If this is set to \"off\", "
+"Duplicati will not attempt to create a disk snapshot. Setting this to "
+"\"auto\" makes Duplicati attempt to create a snapshot, and fail silently if "
+"that was not allowed or supported (note that the OS may still log system "
+"warnings). A setting of \"on\" will also make Duplicati attempt to create a "
+"snapshot, but will produce a warning message in the log if it fails. Setting"
+" it to \"required\" will make Duplicati abort the backup if the snapshot "
+"creation fails. On windows this uses the Volume Shadow Copy Services (VSS) "
+"and requires administrative privileges. On Linux this uses Logical Volume "
+"Management (LVM) and requires root privileges. On macOS this uses Apple File"
+" System (APFS) snapshots and requires root privileges."
+msgstr ""
+"Ce réglage contrôle l'utilisation de clichés, ce qui permet à Duplicati de "
+"sauvegarder les fichiers qui sont verrouillés par d'autres programmes. S'il "
+"est réglé à \"off\", Duplicati ne tentera pas de créer un cliché de disque. "
+"À \"auto\", Duplicati tente de créer un cliché et arrête sans rouspéter en "
+"cas d'interdiction ou autre empêchement (ce qui n'empêche pas l'OS de tracer"
+" une alerte). À \"on\" également, Duplicati essaye de créer un cliché mais "
+"alors il produit un message d'alerte dans le journal en cas d'échec. À "
+"\"required\", en plus, Duplicati arrêtera la sauvegarde en cas d'échec de "
+"création du cliché. Sur Windows on utilise le Service Volume Shadow Copy "
+"(VSS) et cela requiert le privilège administrateur. Sur Linux on utilise "
+"Logical Volume Management (LVM) avec le privilège root. Sur MacOS on utilise"
+" les clichés Apple File System (APFS) snapshots avec le privilège root."
 
 #: Library/Main/Strings.cs:122
 msgid "Control the use of disk snapshots"
@@ -4973,6 +5429,22 @@ msgstr ""
 "verrouillés par une autre application pour assurer la cohérence. Cette "
 "option peut désactiver la vérification et permet à Duplicati d'effectuer des"
 " lectures optimistes des fichiers verrouillés."
+
+#: Library/Main/Strings.cs:152
+msgid "Ignore backup exclusion attributes"
+msgstr "Ignorer les exclusions d'attributs de la sauvegarde"
+
+#: Library/Main/Strings.cs:153
+msgid ""
+"By default, Duplicati will skip files marked with backup exclusion extended "
+"attributes, such as the macOS com.apple.backupd flag or a Linux "
+"duplicati.exclude marker. Enable this option to ignore any extended "
+"attributes."
+msgstr ""
+"Par défaut, Duplicati ignorera les fichiers marqués par les attributs "
+"étendus d'exclusion de sauvegarde, comme sur macOS  le drapeau "
+"com.apple.backupd ou sur Linux un marqueur duplicati.exclude. L'activation "
+"de cette option permet d'outrepasser ces attibuts."
 
 #: Library/Main/Strings.cs:154
 #, csharp-format
@@ -5532,6 +6004,23 @@ msgstr ""
 #: Library/Main/Strings.cs:229
 msgid "Keep all versions within a timespan"
 msgstr "Garder toutes les versions dans une fourchette de temps"
+
+#: Library/Main/Strings.cs:230
+msgid ""
+"Sets how long uploaded backup files should be protected with an immutable "
+"object lock (for example, 30d). If this option is not set, the files will "
+"not be protected with an object lock. Not all destinations support object "
+"locking."
+msgstr ""
+"Règle la durée pendant laquelle les fichiers de sauvegarde envoyés sont "
+"protégés par un verrouillage  immuable d'objet (par exemple, 30d). En "
+"l'absence de précision, les fichiers ne seront pas protégés par un "
+"verrouillage. Toutes les destinations ne prennent pas en charge le "
+"verrouillage d'objets."
+
+#: Library/Main/Strings.cs:231
+msgid "Lock duration for remote backup files"
+msgstr "Durée de verrouillage des fichiers pour sauvegardes distantes"
 
 #: Library/Main/Strings.cs:232
 msgid ""
@@ -6252,6 +6741,21 @@ msgstr ""
 msgid "Activate logging of all database queries"
 msgstr "Activer la journalisation de toutes les requêtes de base de données"
 
+#: Library/Main/Strings.cs:341
+msgid "Store metadata content in the database"
+msgstr "Enregistrer les métadonnées dans la base de données"
+
+#: Library/Main/Strings.cs:342
+msgid ""
+"By default, metadata content is only stored in the remote volumes. Use this "
+"option to also store metadata content in the local database, which can speed"
+" up certain operations at the cost of increased database size."
+msgstr ""
+"Par défaut, les contenus de métadonnées sont uniquement conservés sur les "
+"volumes distants. Cette option permet de les stocker également dans la base "
+"de données locale, ce qui peut accélérer certaines opérations au prix d'une "
+"augmentation de la taille de la base de données."
+
 #: Library/Main/Strings.cs:343
 msgid ""
 "If dblock files are missing from the destination, you can attempt to rebuild"
@@ -6295,6 +6799,20 @@ msgstr "list-broken-files"
 #: Library/Main/Strings.cs:348
 msgid "Disable replacement of missing metadata"
 msgstr "Désactiver le remplacement des métadonnées manquantes"
+
+#: Library/Main/Strings.cs:349
+msgid ""
+"If this option is enabled, the purge-broken-files command will skip "
+"calculating the size of the removed files. This can speed up the operation "
+"on large datasets."
+msgstr ""
+"Si cette option est activée, la commande purge-broken-files ne calculera pas"
+" la taille des fichiers supprimés, ce qui peut accélérer l'opération sur les"
+" gros volumes de données."
+
+#: Library/Main/Strings.cs:350
+msgid "Skip calculating removed file size"
+msgstr "Passer le calcul de taille des fichiers supprimés"
 
 #: Library/Main/Strings.cs:352
 msgid ""
@@ -6551,6 +7069,23 @@ msgstr ""
 "processus dans le flux de restauration. L'augmentation de la taille des "
 "tampons peut améliorer les performances de restauration."
 
+#: Library/Main/Strings.cs:386
+msgid "Allow restore outside target directory"
+msgstr "Autoriser les restaurations hors du répertoire cible"
+
+#: Library/Main/Strings.cs:387
+msgid ""
+"Use this option to allow the restore process to write files outside the "
+"target directory. This is normally disabled to prevent path traversal "
+"attacks, but can be enabled if you need to restore files to a location "
+"outside the target directory (e.g. via symlinks)."
+msgstr ""
+"Cette option autorise le processus de restauration à écrire en dehors du "
+"répertoire cible. Ceci est normalement désactivé pour empêcher les attaques "
+"par traversée de chemin, mais peut être activé si vous avez besoin de "
+"restaurer des fichiers vers un endroit en dehors du répertoire cible(p.ex. "
+"via des liens symboliques/raccourcis)."
+
 #: Library/Main/Strings.cs:388
 msgid "Enable internal profiling"
 msgstr "Activer le profilage interne"
@@ -6611,6 +7146,24 @@ msgstr ""
 "Option de définition de l'emplacement de la galerie de photos sur MacOS. "
 "Cette option n'a d'effet que si la galerie ne se trouve pas dans son "
 "emplacement par défaut."
+
+#: Library/Main/Strings.cs:396
+msgid "Refresh lock information during repair"
+msgstr "Actualiser les informations de verrouillage pendant la réparation"
+
+#: Library/Main/Strings.cs:397
+msgid ""
+"Use this option to refresh the object lock expiration information from the "
+"backend during a repair operation. This will query the backend for the "
+"current lock status of each remote volume and update the local database "
+"accordingly. If the backend does not support locking, this option will be "
+"ignored."
+msgstr ""
+"Option de rafraîchissement des informations d'expiration de verrouillage "
+"d'objets à partir de la plateforme pendant une opération de réparation. On "
+"interroge la plateforme au sujet du statut actuel de verrouillage de chaque "
+"volume distant et on met à jour la base de données en conséquence. Si la "
+"plateforme ne prend pas en charge le verrouillage, l'option est ignorée."
 
 #: Library/Main/Strings.cs:404
 #, csharp-format
@@ -6747,6 +7300,249 @@ msgstr ""
 #: Library/Modules/Builtin/Strings.cs:54
 msgid "Configure Microsoft SQL Server module"
 msgstr "Configurer le module Microsoft SQL Server"
+
+#: Library/Modules/Builtin/Strings.cs:59
+msgid "Remote synchronization (3-2-1)"
+msgstr "Synchronisation distante (3-2-1)"
+
+#: Library/Modules/Builtin/Strings.cs:61
+msgid ""
+"Specify the source backend string for remote synchronization. If not set, "
+"the current backup destination is used."
+msgstr ""
+"Indiquez la chaîne de stockage source pour la synchronisation distante. Si "
+"non définie, la destination de sauvegarde courante sera utilisée."
+
+#: Library/Modules/Builtin/Strings.cs:62
+msgid "Remote sync destination backend"
+msgstr "Synchro distante : plateforme de destination"
+
+#: Library/Modules/Builtin/Strings.cs:63
+msgid ""
+"Specify the destination backend strings for remote synchronization, comma-"
+"separated."
+msgstr ""
+"Chaînes de plateforme de pour la synchronisation distante, séparées par des "
+"virgules."
+
+#: Library/Modules/Builtin/Strings.cs:64
+msgid "Create destination folders"
+msgstr "Plateforme : création dossiers de destination"
+
+#: Library/Modules/Builtin/Strings.cs:65
+msgid ""
+"Automatically create folders in the destination backend if they do not "
+"exist."
+msgstr ""
+"Créer automatiquement les répertoires de destination s'ils n'existent pas."
+
+#: Library/Modules/Builtin/Strings.cs:66
+msgid "Backend retries"
+msgstr "Plateforme : nombre d'essais"
+
+#: Library/Modules/Builtin/Strings.cs:67
+msgid "Number of times to recreate a backend on backend errors."
+msgstr "Nombre de tentatives de création de plateforme en cas d'échec."
+
+#: Library/Modules/Builtin/Strings.cs:68
+msgid "Backend retry delay"
+msgstr "Plateforme : délai de re-essais "
+
+#: Library/Modules/Builtin/Strings.cs:69
+msgid "Delay in milliseconds between backend retries."
+msgstr "Délai en millisecondes pour les nouvelles tentatives de plateforme"
+
+#: Library/Modules/Builtin/Strings.cs:70
+msgid "Exponential retry backoff"
+msgstr "Synchro distante : délai exponentiel"
+
+#: Library/Modules/Builtin/Strings.cs:71
+msgid "Use exponential backoff for backend retries."
+msgstr "Utiliser du délai exponentiel pour les nouveaux essais"
+
+#: Library/Modules/Builtin/Strings.cs:72
+msgid "Auto confirm remote sync"
+msgstr "Synchro distante : confirmation auto"
+
+#: Library/Modules/Builtin/Strings.cs:73
+msgid ""
+"Automatically confirm the remote synchronization plan to avoid interactive "
+"prompts."
+msgstr ""
+"Confirmer automatiquement le planning de synchronisation distante pour "
+"éviter les demandes interactives."
+
+#: Library/Modules/Builtin/Strings.cs:74
+msgid "Remote sync dry run"
+msgstr "Synchro distante : essai à blanc"
+
+#: Library/Modules/Builtin/Strings.cs:75
+msgid "Do not write or delete files during remote synchronization."
+msgstr "Ne pas écrire ou supprimer les fichiers pendant la synchronisation."
+
+#: Library/Modules/Builtin/Strings.cs:76
+msgid "Destination backend options"
+msgstr "Options de plateforme de destination"
+
+#: Library/Modules/Builtin/Strings.cs:77
+msgid ""
+"Space-separated key=value pairs for the destination backend, e.g. "
+"\"key1=value1 key2=value2\"."
+msgstr ""
+"Paires de clé=valeur séparées par un espace pour la plateforme de "
+"destination, p.ex. \"clé1=valeur1 clé2=valeur2\"."
+
+#: Library/Modules/Builtin/Strings.cs:78
+msgid "Force remote sync"
+msgstr "Forcer la synchro distante"
+
+#: Library/Modules/Builtin/Strings.cs:79
+msgid ""
+"Force synchronization, skipping comparisons and overwriting the destination."
+msgstr ""
+"Forcer la synchronisation en ignorant les comparaisons et en écrasant les "
+"destinations."
+
+#: Library/Modules/Builtin/Strings.cs:80
+msgid "Global backend options"
+msgstr "Options globales de plateforme"
+
+#: Library/Modules/Builtin/Strings.cs:81
+msgid ""
+"Space-separated key=value pairs applied to both backends unless overridden."
+msgstr ""
+"Paires de clé=valeur séparées par un espace pour les deux types de "
+"plateforme. Peuvent être remplacées par les options dédiées."
+
+#: Library/Modules/Builtin/Strings.cs:82
+msgid "Remote sync log file"
+msgstr "Fichier journal de synchro distante"
+
+#: Library/Modules/Builtin/Strings.cs:83
+msgid ""
+"The log file to write to. If not set here, the global options are checked."
+msgstr ""
+"Fichier journal de synchro. En l'absence de précision, l'option globale est "
+"utilisée."
+
+#: Library/Modules/Builtin/Strings.cs:84
+msgid "Remote sync log level"
+msgstr "Niveau de journalisation synchro distante"
+
+#: Library/Modules/Builtin/Strings.cs:85
+msgid "The log level to use. If not set here, the global options are checked."
+msgstr ""
+"Niveau de journalisation. En l'absence de précision ici, l'option globale "
+"sera utilisée."
+
+#: Library/Modules/Builtin/Strings.cs:86
+msgid "Parse arguments only"
+msgstr "Seulement parcourir les arguments"
+
+#: Library/Modules/Builtin/Strings.cs:87
+msgid "Only parse the arguments and then exit."
+msgstr "Seulement parcourir les arguments puis quitter"
+
+#: Library/Modules/Builtin/Strings.cs:88
+msgid "Show progress"
+msgstr "Afficher l'avancement"
+
+#: Library/Modules/Builtin/Strings.cs:89
+msgid "Print progress to STDOUT."
+msgstr "Imprimer l'avancement vers STDOUT"
+
+#: Library/Modules/Builtin/Strings.cs:90
+msgid "Retention mode"
+msgstr "Mode de préservation"
+
+#: Library/Modules/Builtin/Strings.cs:91
+msgid "Keep old files by renaming instead of deleting them."
+msgstr ""
+"Conserver les anciens fichiers en les renommant au lieu de les supprimer."
+
+#: Library/Modules/Builtin/Strings.cs:92
+msgid "Operation retries"
+msgstr "Retenter l'opération "
+
+#: Library/Modules/Builtin/Strings.cs:93
+msgid "Number of times to retry on errors."
+msgstr "Nombre de nouvelle tentative après échec."
+
+#: Library/Modules/Builtin/Strings.cs:94
+msgid "Source backend options"
+msgstr "Options de pateforme source"
+
+#: Library/Modules/Builtin/Strings.cs:95
+msgid ""
+"Space-separated key=value pairs for the source backend, e.g. \"key1=value1 "
+"key2=value2\"."
+msgstr ""
+"Paires de clé=valeur séparées par un espace pour la plateforme source, p.ex."
+" \"clé1=valeur1 clé2=valeur2\"."
+
+#: Library/Modules/Builtin/Strings.cs:96
+msgid "Verify contents"
+msgstr "Vérifier les contenus"
+
+#: Library/Modules/Builtin/Strings.cs:97
+msgid "Verify file contents before overwriting destination files."
+msgstr ""
+"Vérifier les contenus des fichiers avant d'écraser les fichiers de "
+"destination."
+
+#: Library/Modules/Builtin/Strings.cs:98
+msgid "Verify after upload"
+msgstr "Vérifier après l'envoi"
+
+#: Library/Modules/Builtin/Strings.cs:99
+msgid "Verify files after uploading them."
+msgstr "Vérifier les fichiers après leur envoi."
+
+#: Library/Modules/Builtin/Strings.cs:100
+msgid "Remote sync trigger mode"
+msgstr "Mode de déclenchement de la synchro distante"
+
+#: Library/Modules/Builtin/Strings.cs:101
+msgid ""
+"Specify the trigger modes for remote synchronization, comma-separated: "
+"inline (default, after every backup), scheduled (after schedule has passed),"
+" counting (after N backups)."
+msgstr ""
+"Indiquez les modes de déclenchement de la synchronisation distante, séparés "
+"par des virgules : inline (défaut, après chaque sauvegarde), scheduled "
+"(après l'échéance de planning), counting (après N sauvegardes)."
+
+#: Library/Modules/Builtin/Strings.cs:102
+msgid "Remote sync schedule"
+msgstr "Planning de synchro distante"
+
+#: Library/Modules/Builtin/Strings.cs:103
+msgid ""
+"Specify the schedule intervals for remote synchronization, comma-separated, "
+"e.g. '7.00:00:00,14.00:00:00'."
+msgstr ""
+"Indique les intervalles de planification pour les synchronisations, séparés "
+"par des virgules, p.ex. '7.00:00:00,14.00:00:00'."
+
+#: Library/Modules/Builtin/Strings.cs:104
+msgid "Remote sync backup count"
+msgstr "Total des synchros distantes de sauvegardes"
+
+#: Library/Modules/Builtin/Strings.cs:105
+msgid ""
+"Specify the numbers of backups after which to trigger remote "
+"synchronization, comma-separated."
+msgstr ""
+"Indiquez les nombres, séparés par des virgules, de sauvegardes après lequel "
+"déclencher une synchronisation distante."
+
+#: Library/Modules/Builtin/Strings.cs:106
+msgid "Sync on warnings"
+msgstr "Synchro en cas d'alertes"
+
+#: Library/Modules/Builtin/Strings.cs:107
+msgid "Enable synchronization when the backup completes with warnings."
+msgstr "Active la synchronisation en cas de fin de sauvegarde avec alertes."
 
 #: Library/Modules/Builtin/Strings.cs:111
 msgid "Execute a script before starting an operation, and again on completion"
@@ -6916,6 +7712,18 @@ msgstr ""
 #: Library/Modules/Builtin/Strings.cs:147
 msgid "SMTP Password"
 msgstr "Mot de passe SMTP"
+
+#: Library/Modules/Builtin/Strings.cs:148
+msgid ""
+"This setting is required if mail should be sent, all other settings have default values. You can supply multiple email addresses separated with commas, and you can use the normal address format as specified by RFC2822 section 3.4.\n"
+"Example with 3 recipients:\n"
+"\n"
+"Peter Sample <peter@example.com>, John Sample <john@example.com>, admin@example.com"
+msgstr ""
+"Réglage nécessaire pour l'envoi de mails, tous les autres réglages étant définis par défaut. Vous pouvez donner plusieurs adresses séparées par des virgules, et vous pouvez utiliser le format normal défini par la section 3.4 de la RFC2822.\n"
+"Exemple avec 3 destinataires :\n"
+"\n"
+"Raoul Petite <raoul@petite.com>, John Sample <john@example.com>, admin@example.com"
 
 #: Library/Modules/Builtin/Strings.cs:152
 msgid "Email recipient(s)"
@@ -7119,6 +7927,17 @@ msgstr "Mot de passe du compte d'envoi des messages"
 #: Library/Modules/Builtin/Strings.cs:199
 msgid "The XMPP password"
 msgstr "Le mot de passe XMPP"
+
+#: Library/Modules/Builtin/Strings.cs:200
+#: Library/Modules/Builtin/Strings.cs:234
+#: Library/Modules/Builtin/Strings.cs:263
+#, csharp-format
+msgid ""
+"You can specify one of \"{0}\", \"{1}\", \"{2}\", \"{3}\".\n"
+"You can supply multiple options with a comma separator, e.g. \"{0},{1}\". The special value \"{4}\" is a shorthand for \"{0},{1},{2},{3}\" and will cause all backup operations to send a message."
+msgstr ""
+"Vous pouvez indiquer un parmi \"{0}\", \"{1}\", \"{2}\", \"{3}\".\n"
+"Vous pouvez donner de multiples options séparées par des virgules, p.ex. \"{0},{1}\". La valeur spéciale \"{4}\" est un abrégé de \"{0},{1},{2},{3}\" et provoque l'envoi d'un message par toutes les opérations de sauvegardes."
 
 #: Library/Modules/Builtin/Strings.cs:203
 #: Library/Modules/Builtin/Strings.cs:237
@@ -7355,6 +8174,179 @@ msgstr "Limiter les lignes de journaux"
 #, csharp-format
 msgid "The format is not supported: {0}"
 msgstr "Le format n'est pas pris en charge: {0}"
+
+#: Library/RemoteSynchronization/Strings.cs:34
+msgid ""
+"Remote Synchronization Tool\n"
+"\n"
+"This tool synchronizes two remote backends. The tool assumes that the intent is\n"
+"to have the destination match the source.\n"
+"\n"
+"If the destination has files that are not in the source, they will be deleted\n"
+"(or renamed if the retention option is set).\n"
+"\n"
+"If the destination has files that are also present in the source, but the files\n"
+"differ in size, or if the source files have a newer (more recent) timestamp,\n"
+"the destination files will be overwritten by the source files. Given that some\n"
+"backends do not allow for metadata or timestamp modification, and that the tool\n"
+"is run after backup, the destination files should always have a timestamp that\n"
+"is newer (or the same if run promptly) compared to the source files.\n"
+"\n"
+"If the force option is set, the destination will be overwritten by the source,\n"
+"regardless of the state of the files. It will also skip the initial comparison,\n"
+"and delete (or rename) all files in the destination.\n"
+"\n"
+"If the verify option is set, the files will be downloaded and compared after\n"
+"uploading to ensure that the files are correct. Files that already exist in the\n"
+"destination will be verified before being overwritten (if they seemingly match).\n"
+msgstr ""
+"Outil de synchronisation distante\n"
+"\n"
+"Cet outil synchronise deux plateformes distantes. Il présume que l'objectif est\n"
+"d'obtenir la correspondance de la destination par rapport à la source.\n"
+"\n"
+"Si la destination contient des fichiers absents de la source, ils seront supprimés\n"
+"(ou renommés si l'option de préservation est activée).\n"
+"\n"
+"Si la destination contient des fichier présents dans la source mais de taille différente \n"
+"ou plus anciens (selon horodatage), ils seront écrasés par les fichiers source. \n"
+"Étant donné que certaines plateformes ne permettent pas la modification de \n"
+"métadonnées ou d'horodatages, et que l'outil est exécuté après la sauvegarde, \n"
+"les fichiers de destination devraient toujours avoir un horodatage supérieur ou \n"
+"égal à celui du fichier source.\n"
+"\n"
+"Si l'option force est activée, la destination est écrasée par la source, sans égard \n"
+"à l'état des fichiers. Ceci inhibe également la comparaison initiale, et supprime \n"
+"(ou renomme) tous les fichiers de la destination.\n"
+"\n"
+"Si l'option de vérification est activée, les fichiers seront téléchargés pour comparaison \n"
+"après l'envoi pour vérifier leur conformité. Les fichiers existant déjà dans la \n"
+"destination seront vérifiés avant d'être écrasés (s'ils semblent correspondre).\n"
+
+#: Library/RemoteSynchronization/Strings.cs:61
+msgid "The source backend string"
+msgstr "Chaîne de plateforme de sources"
+
+#: Library/RemoteSynchronization/Strings.cs:66
+msgid "The destination backend string"
+msgstr "Chaîne de plateforme de destination"
+
+#: Library/RemoteSynchronization/Strings.cs:71
+msgid ""
+"Automatically create folders in the destination backend if they do not exist"
+msgstr ""
+"Créer automatiquement les répertoires de destination s'ils n'existent pas"
+
+#: Library/RemoteSynchronization/Strings.cs:76
+msgid "Number of times to recreate a backend on backend errors"
+msgstr "Nombre de de tentatives de récréation de plateforme en cas d'erreurs"
+
+#: Library/RemoteSynchronization/Strings.cs:81
+msgid "Delay in milliseconds between backend retries"
+msgstr "Délai en millisecondes entre tentatives d'accès à la plateforme"
+
+#: Library/RemoteSynchronization/Strings.cs:86
+msgid ""
+"Use exponential backoff for backend retries, multiplying the delay by two "
+"for each failure."
+msgstr ""
+"Délai exponentiel de nouvelle tentative d'accès à l'infrastructure, "
+"multipliant le délai par deux à chaque échec."
+
+#: Library/RemoteSynchronization/Strings.cs:91
+msgid "Automatically confirm the operation"
+msgstr "Confirmer automatiquement l'opération"
+
+#: Library/RemoteSynchronization/Strings.cs:96
+msgid ""
+"Do not actually write or delete files. If not set here, the global options "
+"will be checked"
+msgstr ""
+"Ne pas réellement écrire ou supprimer les fichiers. Si rien n'est indiqué "
+"ici l'option globale sera utilisée"
+
+#: Library/RemoteSynchronization/Strings.cs:101
+msgid ""
+"Options for the destination backend. Each option is a key-value pair "
+"separated by an equals sign, e.g. --dst-options key1=value1 key2=value2 "
+"[default: empty]"
+msgstr ""
+"Options pour l'infrastructure de destination. Chaque option est une paire "
+"clé-valeur séparée par le signe égale, p.ex. --dst-options clé1=valeur1 "
+"clé2=valeur2 [défaut : vide]"
+
+#: Library/RemoteSynchronization/Strings.cs:106
+msgid "Force the synchronization"
+msgstr "Forcer la synchronisation"
+
+#: Library/RemoteSynchronization/Strings.cs:111
+msgid ""
+"Global options all backends. May be overridden by backend specific options "
+"(src-options, dst-options). Each option is a key-value pair separated by an "
+"equals sign, e.g. --global-options key1=value1 key2=value2 [default: empty]"
+msgstr ""
+"Options globales pour toutes infrastructures. Elles peuvent être remplacées "
+"par l'option correspondante spécifique à une infrastructure particulière "
+"(src-options, dst-options). Chaque option Each option is a key-value pair "
+"separated by an equals sign, e.g. --global-options key1=value1 key2=value2 "
+"[default: empty]"
+
+#: Library/RemoteSynchronization/Strings.cs:116
+msgid ""
+"The log file to write to. If not set here, global options will be checked "
+"[default: \"\"]"
+msgstr ""
+"Fichier journal à utiliser. If not set here, global options will be checked "
+"[default: \"\"]"
+
+#: Library/RemoteSynchronization/Strings.cs:121
+msgid "The log level to use. If not set here, global options will be checked"
+msgstr ""
+"Niveau de journalisation. Si rien n'est indiqué ici l'option globale sera "
+"utilisée"
+
+#: Library/RemoteSynchronization/Strings.cs:126
+msgid "Only parse the arguments and then exit"
+msgstr "Seulement parcourir les arguments puis sortir"
+
+#: Library/RemoteSynchronization/Strings.cs:131
+msgid "Print progress to STDOUT"
+msgstr "Imprimer l'avancement vers STDOUT"
+
+#: Library/RemoteSynchronization/Strings.cs:136
+msgid "Toggles whether to keep old files. Any deletes will be renames instead"
+msgstr ""
+"Choisir de conserver les vieux fichiers. Sinon, toutes les suppressions "
+"seront des renommages"
+
+#: Library/RemoteSynchronization/Strings.cs:141
+msgid "Number of times to retry on errors"
+msgstr "Nombre de tentatives en cas d'erreurs"
+
+#: Library/RemoteSynchronization/Strings.cs:146
+msgid ""
+"Options for the source backend. Each option is a key-value pair separated by"
+" an equals sign, e.g. --src-options key1=value1 key2=value2 [default: empty]"
+msgstr ""
+"Options pour l'infrastructure des sources. Chaque option est une paire clé-"
+"valeur séparée par le signe  égale, p.ex. --src-options clé1=valeur1 "
+"clé2=valeur2 [défaut: vide]"
+
+#: Library/RemoteSynchronization/Strings.cs:151
+msgid ""
+"Verify the contents of the files to decide whether the pre-existing "
+"destination files should be overwritten"
+msgstr ""
+"Vérifier les contenus des fichiers pour décider si la destination pré-"
+"existante doit être écrasée"
+
+#: Library/RemoteSynchronization/Strings.cs:156
+msgid ""
+"Verify the files after uploading them to ensure that they were uploaded "
+"correctly"
+msgstr ""
+"Vérifier les fichiers après leur envoi pour s'assurer de la conformité de "
+"l'opération"
 
 #: Library/Utility/Strings.cs:29
 #, csharp-format

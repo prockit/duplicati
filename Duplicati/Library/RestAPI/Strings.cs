@@ -80,6 +80,7 @@ Error message: {0}", error); }
         public static string WebserverPreAuthTokensDescription { get { return LC.L(@"A list of pre-authenticated tokens, separated with semicolons. These can be used in cases where the authentication is provided by a proxy. Each token must be at least 10 characters and not contain extended characters. The token must be provided by setting the header on each request to contain: Authentication: PreAuth <token>"); } }
         public static string WebserverDisableApiExtensionsDescription { get { return LC.L(@"Disable the API extensions reported by the server. This will not disable the functionality, but will not report the extensions in the API responses. Use this option to degrade the server to a more basic API."); } }
         public static string WebserverTokenDurationDescription { get { return LC.L(@"The duration of the refresh tokens issued by the server. This value indicates how much time can pass without activity before the user is asked to log in again. The value must be greater than zero and is capped at 30 days."); } }
+        public static string WebserverEnableFolderStatusServiceDescription { get { return LC.L(@"Enable the folder status service for showing overlay icons in the file explorer"); } }
         public static string DisabledbencryptionLong { get { return LC.L(@"Use this option to disable database encryption of sensitive fields"); } }
         public static string DisabledbencryptionShort { get { return LC.L(@"Disable database encryption"); } }
         public static string LogwindowseventlogLong { get { return LC.L(@"Use this option to log to the Windows event log. The provided name is in the format Log:Source. If no log name is provided, ""Duplicati 2"" is used."); } }
@@ -119,6 +120,10 @@ Error message: {0}", error); }
         public static string AllowedCompressionModulesLong { get { return LC.L(@"Set the allowed compression modules for remote control. The value is a comma-separated list of compression module names. If this option is not set, all compression modules are allowed. Use this option to restrict the compression modules that can be used to compress data."); } }
         public static string SecretProviderFailedToGetEncryptionKey { get { return LC.L(@"Failed to get encryption key from secret provider"); } }
         public static string SecretProviderFailedToSetEncryptionKey { get { return LC.L(@"Failed to set encryption key in secret provider"); } }
+        public static string ConfigureHttpsShort { get { return LC.L(@"Configure HTTPS certificates"); } }
+        public static string ConfigureHttpsLong { get { return LC.L(@"Automatically generate and configure HTTPS certificates for the server"); } }
+        public static string ConfigureHttpsHostnamesShort { get { return LC.L(@"HTTPS hostnames"); } }
+        public static string ConfigureHttpsHostnamesLong { get { return LC.L(@"Comma-separated list of hostnames to include in the HTTPS certificate (used with --configure-https)"); } }
     }
     internal static class Scheduler
     {

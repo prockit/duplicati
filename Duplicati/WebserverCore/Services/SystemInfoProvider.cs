@@ -56,6 +56,7 @@ public class SystemInfoProvider(IApplicationSettings applicationSettings, Connec
         "v1:subscribe:taskqueue",
         "v1:subscribe:taskcompleted",
         "v1:subscribe:notifications",
+        "v2:system:temp-disk-space",
 
         // "v1:subscribe:scheduler",
     ];
@@ -396,6 +397,8 @@ public class SystemInfoProvider(IApplicationSettings applicationSettings, Connec
             DefaultOAuthURL = AuthIdOptionsHelper.DUPLICATI_OAUTH_SERVICE,
             DefaultOAuthURLv2 = AuthIdOptionsHelper.DUPLICATI_OAUTH_SERVICE_NEW,
             PowerModeProviders = systeminfo.PowerModeProviders,
+            LocalLicenseStatus = SystemInfoDto.LicenseStatusDto.Map(Proprietary.LicenseChecker.LicenseHelper.GetLocalLicenseData()),
+            RemoteLicenseStatus = SystemInfoDto.LicenseStatusDto.Map(Proprietary.LicenseChecker.LicenseHelper.GetRemoteLicenseData())
         };
     }
 }
